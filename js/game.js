@@ -19,10 +19,12 @@ const createElement = (tag, className) => {
   return element
 }
 
-const creatCard = () => {
+const creatCard = character => {
   const card = createElement('div', 'card')
   const front = createElement('div', 'face front')
   const back = createElement('div', 'face back')
+
+  front.style.backgroundImage = `url('../img/${character}.png')`
 
   card.appendChild(front)
   card.appendChild(back)
@@ -32,7 +34,7 @@ const creatCard = () => {
 
 const loadGame = () => {
   characters.forEach(character => {
-    const card = creatCard()
+    const card = creatCard(character)
     grid.appendChild(card)
   })
 }
