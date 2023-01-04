@@ -1,7 +1,6 @@
 const grid = document.querySelector('.grid')
 
 const characters = [
-  'breach',
   'fenix',
   'jett',
   'kj',
@@ -10,7 +9,8 @@ const characters = [
   'robo',
   'sage',
   'sky',
-  'viper'
+  'viper',
+  'breach'
 ]
 
 const createElement = (tag, className) => {
