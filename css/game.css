@@ -35,9 +35,6 @@
 }
 
 .front{
-  background-color: red;
-  background-image: url(../img/fenix.jpeg);
-
   transform: rotateY(180g);
 }
 
